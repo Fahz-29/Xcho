@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# ฟอร์มของฉันในส่วนของการจัดการฟอร์ม
+# หน้าฟอร์มของฉัน
 
 ---
 <div style={{ textAlign: 'center' }}>

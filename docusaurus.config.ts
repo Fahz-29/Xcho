@@ -85,25 +85,25 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'วิธีการใช้งาน',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+       /* {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://xcho.pea.co.th/login',
           label: 'XCHO',
           position: 'right',
-        },
+        }, */
       ],
     },
     footer: {
       style: 'dark',
-      links: [
+     /* links: [
         {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'วิธีการใช้งาน',
+              to: '/docs',
             },
           ],
         },
@@ -134,10 +134,10 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
-            },
+            }, 
           ],
-        },
-      ],
+        }, 
+      ], */
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
