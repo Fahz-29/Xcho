@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'จัดการแบบฟอร์มอย่างมืออาชีพ ด้วย Xcho',
+    title: 'จัดการแบบฟอร์มอย่างมืออาชีพ ด้วย XCHO',
     Svg: require('@site/static/img/undraw_google-docs_fwhy.svg').default,
     description: (
       <>

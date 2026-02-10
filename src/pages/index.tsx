@@ -28,7 +28,7 @@ function HomepageHeader() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            เข้าสู่หน้าเว็บสร้างแบบฟอร์ม Xcho
+            เข้าสู่หน้าเว็บสร้างแบบฟอร์ม XCHO
           </Link>
 
           {/* ปุ่มที่ 2 */}

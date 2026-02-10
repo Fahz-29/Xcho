@@ -5,6 +5,7 @@ sidebar_position: 4
 import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, ChevronsUpDown, Lock, Search, Radius, Star, Settings2, Vote, ChevronsDown, List, ToggleRight, FileUp, Image, ArrowDownNarrowWide, RectangleHorizontal, AlignLeft, Rows3, Square, PlusSquare, LayoutGrid, Grid3X3, CodeXml, TableCellsSplit, Sigma, Signature, Trash2, ArrowDownUp } from 'lucide-react';
 
 # หน้าสร้างแบบฟอร์ม
+หน้าสร้างแบบฟอร์ม เป็นจุดเริ่มต้นสำหรับการออกแบบและกำหนดค่าชุดคำถามใหม่ตามความต้องการของผู้ใช้ โดยระบบมาพร้อมกับเครื่องมือที่ช่วยให้การสร้างแบบฟอร์มเป็นเรื่องง่าย ตั้งแต่การเลือกรูปแบบคำถาม การตั้งค่าเงื่อนไข (Logic) ไปจนถึงการปรับแต่งหน้าตาของฟอร์ม 
 
 ---
 
