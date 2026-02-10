@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, ChevronsUpDown, Lock, Search, Radius, Star, Settings2, Vote, ChevronsDown, List, ToggleRight, FileUp, Image, ArrowDownNarrowWide, RectangleHorizontal, AlignLeft, Rows3, Square, PlusSquare, LayoutGrid, Grid3X3, CodeXml, TableCellsSplit, Sigma, Signature } from 'lucide-react';
+import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, ChevronsUpDown, Lock, Search, Radius, Star, Settings2, Vote, ChevronsDown, List, ToggleRight, FileUp, Image, ArrowDownNarrowWide, RectangleHorizontal, AlignLeft, Rows3, Square, PlusSquare, LayoutGrid, Grid3X3, CodeXml, TableCellsSplit, Sigma, Signature, Trash2, ArrowDownUp } from 'lucide-react';
 
 # หน้าสร้างแบบฟอร์ม
 
@@ -28,27 +28,71 @@ import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, Ch
 
 ---
 
-## 1. แบบสำรวจ
+## ส่วนที่ 1 แบบสำรวจ
 
 **แบบสำรวจ หรือ สร้างแบบสำรวจ** : หน้านี้จะเป็นการสร้างและออกแบบแบบฟอร์มทั้งหมดตามที่ผู้ใช้ต้องการ อีกทั้งยังมีเครื่องมือมากมาย โดยจะอธิบายออกเป็นส่วนๆ ดังนี้
 
 ---
 
-### สถานะและปุ่มส่งออกข้อมูล
+### 1.1 สถานะและปุ่มส่งออกข้อมูล
 
 <div style={{ textAlign: 'center' }}>
   <img src="/img/create-form/create-form22.png" alt="คำอธิบายรูป" width="400" />
 </div>
 
 - **สถานะ :** บอกว่าแบบฟอร์มนี้บันทึกแล้วหรือยัง
-- **ปุ่มเลือกโหมด / ประเภทแบบฟอร์ม :** มี 2 แบบ ได้แก่ โหมดแบบสำรวจ และ โหมดแบบทดสอบ **หากผู้ใช้ต้องการเลือกโหมด / ประเภทแบบฟอร์มเป็นแบบไหนสามารถกดที่ปุ่มโหมดเพื่อเปลี่ยนประเภทแบบฟอร์มตามที่ต้องการได้เลย**
+- **ปุ่มเลือกโหมด / ประเภทแบบฟอร์ม :** มี 2 แบบ ได้แก่ โหมดแบบสำรวจ และ โหมดแบบทดสอบ หากผู้ใช้ต้องการเลือกโหมด / ประเภทแบบฟอร์มเป็นแบบไหนสามารถกดที่ปุ่มโหมดเพื่อเปลี่ยนประเภทแบบฟอร์มตามที่ต้องการได้
 - **ปุ่ม PDF :** ปุ่มนี้สำหรับกรณีที่ผู้ใช้ต้องการดาวน์โหลดแบบฟอร์มที่ผู้ใช้สร้างให้ออกมาเป็นในรูปแบบ PDF
-- **ปุ่ม AI :** เป็นปุ่มสำหรับพูดคุยกับ AI เพื่อให้ช่วยออกแบบแบบฟอร์มหรือช่วยคิดคำถามแบบฟอร์มของผู้ใช้ โดยการพิมพ์สิ่งที่ผู้ใช้ต้องการลงไปในนี้ ไว้เป็นอีกทางเลือกหนึ่งในการสร้างแบบฟอร์มให้สะดวกมากยิ่งขึ้น
+
+<div style={{
+  backgroundColor: '#f5f3ff',
+  border: '1px solid #ddd6fe',
+  borderLeft: '5px solid #7c3aed',
+  padding: '12px 16px',
+  borderRadius: '12px',
+  margin: '15px 0',
+  boxShadow: '0 2px 8px rgba(124, 58, 237, 0.08)',
+  lineHeight: '1.6'
+}}>
+  <span style={{ color: '#7c3aed', fontWeight: 'bold', fontSize: '1.1em' }}>• ✨ ปุ่ม AI (ฟีเจอร์ช่วยสร้าง) :</span> <span style={{ fontWeight: 'bold', color: '#4c1d95' }}> ทางเลือกใหม่ที่สะดวกกว่า! </span> <span style={{ color: '#4b5563' }}>เป็นปุ่มสำหรับพูดคุยกับ AI เพื่อให้ช่วยออกแบบหรือคิดคำถามในแบบฟอร์ม เพียงพิมพ์สิ่งที่ผู้ใช้ต้องการลงไป AI จะช่วยร่างเนื้อหาให้ทันที ช่วยประหยัดเวลาและเพิ่มไอเดียในการสร้างแบบฟอร์มได้ดียิ่งขึ้น</span>
+</div>
+
 - **ปุ่มไอคอนรูปขยาย :** ปุ่มนี้จะเป็นการขยายหน้าจอการสร้างแบบฟอร์มให้เห็นเต็มหน้าจอเพื่อให้มองเห็นและสร้างแบบฟอร์มได้ง่ายมากยิ่งขึ้น
 
+<br />
+
+**เพิ่มเติมตัวอย่างการใช้  ปุ่ม AI**
+
+เมื่อกดที่**ปุ่ม AI** ผู้ใช้จะเจอกับแถบด้านข้างทางซ้ายนี้ขึ้นมา เป็นส่วนแถบแชทไว้คุยกับ AI ในการช่วยสร้างแบบฟอร์ม สามารถพิมพ์สิ่งที่ผู้ใช้ต้องการเพื่อให้ AI ช่วยได้ที่ช่องพิมพ์แชทด้านล่าง
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/create-form/create-form72.png" alt="คำอธิบายรูป" width="750" />
+</div>
+
+<br />
+
+- **ตัวอย่างการใช้งานแชทกับ AI**
+
+จากในภาพเป็นตัวอย่างการใช้ AI ในการคุยพิมพ์แชท โดยถามคำถามว่าต้องการให้ AI ช่วยในการสร้างแบบฟอร์มประเมินความพึงพอใจในการดูภาพยนต์ที่โรงหนัง มา 5 คำถาม
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/create-form/create-form73.png" alt="คำอธิบายรูป" width="350" />
+</div>
+
+<br />
+
+- **หน้าแบบฟอร์มผลลัพธ์ที่ได้หลังจากให้ AI ช่วยสร้างแบบฟอร์ม**
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/create-form/create-form74.png" alt="คำอธิบายรูป" width="750" />
+</div>
+
+<br />
+
+- นอกจากนี้ผู้ใช้ยังสามารถดูแบบฟอร์มตัวอย่างจากผลลัพธ์ได้ในแถบ Preview เพื่อดูภาพรวมตัวอย่างแบบฟอร์มก่อนที่จะทำการเผยแพร่จริงได้ในนี้
+<div style={{ textAlign: 'center' }}>
+  <img src="/img/create-form/create-form75.png" alt="คำอธิบายรูป" width="750" />
+</div>
 ---
 
-### แถบเครื่องมือจัดการมุมมอง
+### 1.2 แถบเครื่องมือจัดการมุมมอง
 
 <div style={{ textAlign: 'center' }}>
   <img src="/img/create-form/create-form23.png" alt="คำอธิบายรูป" width="400" />
@@ -64,7 +108,7 @@ import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, Ch
 
 ---
 
-### แถบ Designer
+### 1.3 แถบ Designer
 
 ผู้ใช้จะเจอกับแบบฟอร์มว่างเปล่าเนื่องจากยังไม่ได้สร้างแบบฟอร์มให้ผู้ใช้เริ่มสร้างโดยการกดที่ปุ่ม Add Question ในการเพิ่มคำถามสำหรับเริ่มสร้างแบบฟอร์ม
 
@@ -479,7 +523,7 @@ import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, Ch
   </div>
 </div>
 
-### แถบ Preview
+### 1.4 แถบ Preview
 ในหน้านี้จะเป็นการแสดงหน้าแบบฟอร์มที่เราออกแบบไว้
 
 <div style={{ textAlign: 'center', margin: '15px 0' }}>
@@ -487,7 +531,7 @@ import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, Ch
 </div>
 
 ---
-### แถบ Theme
+### 1.5 แถบ Theme
 ต่อมาในแถบ Theme จะอธิบายเพิ่มเติมในส่วนของเครื่องมือที่อยู่ทางด้านขวาของจอ ดังนี้
 
 <div style={{ textAlign: 'center', margin: '15px 0' }}>
@@ -572,14 +616,14 @@ import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, Ch
 - การเลือกไฟล์หรือวางลิงก์ไฟล์ภาพพื้นหลัง(Background image)
 ---
 
-**เเครื่องมือ Appearrance ใน Theme Settings :**
+**เครื่องมือ Appearance ใน Theme Settings :**
 เป็นการเปิดขยายส่วนของ Panel ที่เป็นส่วนแก้ไขรายละเอียดของรูปร่าง
 
 <div style={{ textAlign: 'center', marginBottom: '10px' }}>
   <img src="/img/create-form/create-form51.png" alt="คำอธิบายรูป" width="300" />
 </div>
 
-**รายละเอียดใน Panel ของ Appearrance ใน Theme Settings**
+**รายละเอียดใน Panel ของ Appearance ใน Theme Settings**
 - การกำหนดสีเน้น(Accent color)
 - ความทึบของแผงและกล่องคำถาม(Panel and question box opacity)
 - ความทึบขององค์ประกอบอินพุต(Input element opacity)
@@ -588,20 +632,74 @@ import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, Ch
 - ปัจจัยมาตราส่วนแบบฟอร์ม(Survey scale factor)
 - มุมรัศมี(Corner radius)
 - การกำหนดแบบขั้นสูง(Advanced mode) 
-
----
  </div>
 </div>
 
-### แถบ Logic
+---
+
+### 1.6 แถบ Logic
 คือส่วนที่ใช้กำหนด **"เงื่อนไข"** ให้กับแบบฟอร์ม เป็นการใช้สร้างกฎเพื่อควบคุมเส้นทางของคนตอบ
 
 <div style={{ textAlign: 'center', marginBottom: '10px' }}>
   <img src="/img/create-form/create-form52.png" alt="คำอธิบายรูป" width="700" />
 </div>
 
+**ตัวอย่างการใช้ในส่วนของ logic**
+
+จากตัวอย่างกำหนดว่าผู้ใช้ต้องการที่จะ**สร้างแบบทดสอบวัดระดับหรือคัดกรองสุขภาพ**
+โดยมีการใช้ Logic เพื่อคัดกรองความเสี่ยงตามอาการที่พบ
+- **คำถามหลัก :** "ท่านมีอาการไข้สูงเกิน 38°C หรือไม่?" (ใช่/ไม่ใช่)
+  - กำหนด Logic (ถ้าตอบ **"ใช่"**) : ระบบจะแสดงรายการอาการเพิ่มเติม เช่น ไอ, เจ็บคอ, หรือสูญเสียการรับรส
+  - กำหนด Logic (ถ้าตอบ **"ไม่ใช่"**) : ระบบจะข้ามไปยังกลุ่มคำถามเกี่ยวกับพฤติกรรมการใช้ชีวิตทั่วไปแทน
+
+<br />
+
+**ขั้นตอนการดำเนินการ**
+1. สร้างแบบฟอร์มคำถาม ทั้งหมด 3 ส่วน ได้แก่ 
+    - หน้าแรก คือหน้าแสดงคำถามอาการว่าผู้ตอบมีไข้สูงเกิน 38°C หรือไม่?
+    - หน้าที่สอง คือหน้าสำหรับแสดงรายการอาการเพิ่มเติม เช่น ไอ, เจ็บคอ, หรือสูญเสียการรับรส
+    - หน้าที่สาม คือหน้าสำหรับแสดงกลุ่มคำถามเกี่ยวกับพฤติกรรมการใช้ชีวิตทั่วไป
+2. พอสร้างคำถามเรียบร้อยแล้วผู้ใช้สามารถ **กำหนดตัวแปร** สำหรับไว้ใช้ในส่วนของ logic ได้ที่แถบด้านข้างของแต่ละคำถาม **ตรงช่อง Question name**
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/logic/logic02.png" alt="คำอธิบายรูป" width="700" />
+</div>
+
+3. เข้าไปในหน้าแถบ logic เพื่อเริ่มสร้างเงื่อนไขตามที่เราต้องการ
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/logic/logic01.png" alt="คำอธิบายรูป" width="700" />
+  <p>หากผู้ใช้ต้องการจะเริ่มสร้าง logic สามารถกดที่ปุ่มคำว่า Add New Rule </p>
+</div>
+
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/logic/logic03.png" alt="คำอธิบายรูป" width="700" />
+  <p>เมื่อกดปุ่มเพิ่ม logic แล้วจะได้หน้าตาแบบนี้ ผู้ใช้สามารถเริ่มสร้าง logic ตามที่ต้องการได้เลย</p>
+</div>
+
+<br />
+
+**ตัวอย่างการใช้ logic ของแบบทดสอบวัดระดับหรือคัดกรองสุขภาพ**
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/logic/logic04.png" alt="คำอธิบายรูป" width="700" />
+</div>
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/logic/logic05.png" alt="คำอธิบายรูป" width="600" />
+</div>
+
+**อธิบายส่วนเครื่องมือเพิ่มเติม**
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/logic/logic06.png" alt="คำอธิบายรูป" width="600" />
+</div>
+
+- หากผู้ใช้ต้องการที่จะลบ logic นั้นๆ สามารถทำได้โดยนำเมาส์ไปชี้ที่ส่วนหัวของ logic ที่ต้องการจะลบออก จากนนั้น**กดปุ่มลบสีแดง** <Trash2 size={20} style={{ verticalAlign: 'middle', marginRight: '8px' }} /> ที่อยู่ทางด้านขวาของ logic
+- ถ้าผู้ใช้ต้องการจะซ่อนหรือขยายรายละเอียดของ logic สามารถทำได้โดยการนำเมาส์ไปชี้ที่ส่วนหัวของ logic ที่ต้องการ จากนั้น**กดปุ่มซ่อนหรือขยายสีม่วง** <ArrowDownUp size={20} style={{ verticalAlign: 'middle', marginRight: '8px' }} /> ที่อยู่ทางด้านซ้ายของ logic
+
+4. หลังจากที่สร้างเงื่อนไข logic เรียบร้อยแล้ว ผู้ใช้สามารถ**กดดูที่แถบ Preview** เพื่อเป็นดูภาพรวมและลองใช้แบบฟอร์มว่า logic สามารถใช้งานได้จริงตรงตามความต้องการถูกต้องหรือไม่ ก่อนที่จะนำแบบฟอร์มออกไปเผยแพร่จริง
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/logic/logic07.png" alt="คำอธิบายรูป" width="700" />
+</div>
+
 ---
-### แถบ JSON Editor
+### 1.7 แถบ JSON Editor
 คือส่วนที่แสดงโครงสร้างเบื้องหลังของแบบฟอร์มในรูปแบบของ Code สำหรับผู้ใช้ที่ต้องการแก้ไขแบบฟอร์มในระดับเชิงลึก
 
 <div style={{ textAlign: 'center', marginBottom: '10px' }}>
@@ -610,15 +708,61 @@ import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, Ch
 
 ---
 
-## 2.ผู้จัดการ
+## ส่วนที่ 2 ผู้จัดการ
 ในหน้านี้สามารถเพิ่มคนอื่นมาเป็นผู้จัดการร่วมกันกับเราได้โดยการกดปุ่มสีม่วงที่มีคำว่า **“เพิ่มผู้จัดการ”** ได้หลังจากกดปุ่มนี้แล้วสามารถพิมพ์ค้นหาด้วยรหัสพนักงานหรือชื่อ-นามสกุล และเลือกตำแหน่ง , สังกัด ในการเพิ่มคนนั้นมาเป็นผู้จัดการได้
 
 <div style={{ textAlign: 'center', marginBottom: '10px' }}>
   <img src="/img/create-form/create-form54.png" alt="คำอธิบายรูป" width="700" />
 </div>
+
+- **รายละเอียดการเพิ่มผู้จัดการ**
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/create-form/create-form63.png" alt="คำอธิบายรูป" width="600" />
+</div>
+
+เมื่อผู้ใช้กดปุ่ม**เพิ่มผู้จัดการ**แล้ว จะมีแถบทางด้านขวาของจอขึ้นเป็นหน้าสำหรับเลือกคนที่ต้องการจะเพิ่มผู้จัดการของพนักงานในกฟภ.
+
+<br />
+
+<div style={{ display: 'flex', gap: '10px', justifyContent: 'center', height: '400px' }}>
+  <img src="/img/create-form/create-form60.png" alt="รูปที่ 1" style={{ width: '300px',objectFit: 'contain' }} />
+  <img src="/img/create-form/create-form64.png" alt="รูปที่ 2" style={{ width: '550px', objectFit: 'contain' }} />
+</div>
+ถ้าต้องการจะค้นหาบุคคลในการเพิ่มผู้จัดการแบบสำรวจที่เราต้องการ สามารถค้นหาได้ที่ตรงช่องค้นหาพนักงาน โดยการพิมพ์ รหัสพนักงานหรือชื่อ-นามสกุลลงไป และสามารถพิมพ์ตำแหน่ง และสังกัดของพนักงาน ได้ที่ช่องค้นหาด้านล่างต่อจากช่องค้นหาพนักงานได้
+
+<div style={{ display: 'flex', gap: '10px', justifyContent: 'center', height: '400px' }}>
+  <img src="/img/create-form/create-form61.png" alt="รูปที่ 1" style={{ width: '200px',objectFit: 'contain' }} />
+  <img src="/img/create-form/create-form65.png" alt="รูปที่ 2" style={{ width: '550px', objectFit: 'contain' }} />
+</div>
+ต่อมาส่วนนี้คือผลการค้นหาที่แสดงขึ้นมา จากการพิมพ์ค้นหาพนักงาน ตำแหน่งและสังกัดนั้นๆ สามารถกดเลือกพนักงานที่ต้องการจะเพิ่มผู้จัดการแบบสำรวจได้ที่ช่องสี่เหลี่ยมด้านหน้าทางซ้ายของรูปรายการพนักงานได้ หรือจะกดเลือกทั้งหมดจากช่องด้านบนมุมขวา และส่วนด้านล่างสุดจะเป็นการแสดงรายชื่อพนักงานในหน้าต่างๆสามารถกดไปหน้าอื่นๆเพื่อดูรายชื่อพนักงานคนอื่นได้
+
+<div style={{ display: 'flex', gap: '10px', justifyContent: 'center', height: '400px' }}>
+  <img src="/img/create-form/create-form66.png" alt="รูปที่ 1" style={{ width: '350px',objectFit: 'contain' }} />
+  <img src="/img/create-form/create-form67.png" alt="รูปที่ 2" style={{ width: '550px', objectFit: 'contain' }} />
+</div>
+
+ส่วนสุดท้ายหลังจากที่กดเลือกผู้ใช้ที่ต้องการจะเพิ่มผู้จัดการแบบสำรวจเรียบร้อยแล้ว สามารถกดบันทึกได้โดยการกดที่ปุ่มสีม่วง **"เพิ่ม ... ท่าน"** ทางด้านขวา หรือถ้าไม่ต้องการบันทึกให้กดที่ปุ่ม **"ยกเลิก"** ทางด้านซ้ายได้
+
+<br />
+
+- **ตัวอย่างหน้าผลลัพธ์หลังจากเพิ่มผู้จัดการเรียบร้อยแล้ว**
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/create-form/create-form68.png" alt="คำอธิบายรูป" width="700" />
+</div>
+จากในภาพหากเราเพิ่มผู้จัดการแบบสำรวจแล้ว จะขึ้นแสดงรายละเอียดข้อมูลของพนักงานของกฟภ.ที่เราทำการเพิ่มด้วย 
+
+<br />
+
+- **กรณีที่เราต้องการลบผู้จัดการที่เราเพิ่มมาออก** 
+1. สามารถกดได้ที่ปุ่ม <Trash2 size={20} style={{ verticalAlign: 'middle', marginRight: '8px' }} />  ที่มุมขวาสุดของจอเพื่อทำการลบผู้จัดการเป็นรายบุคคลออก 
+2. กรณีมีผู้จัดการหลายคนแล้วต้องการที่จะลบผู้จัดการออกทั้งหมดสามารถกดที่ปุ่ม <Trash2 size={20} style={{ verticalAlign: 'middle', marginRight: '8px' }} /> คำว่า **ลบทั้งหมด** ข้างปุ่มเพิ่มผู้จัดการด้านบน เพื่อลบผู้จัดการออกทั้งหมด
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/create-form/create-form69.png" alt="คำอธิบายรูป" width="700" />
+</div>
+
 ---
 
-## 3.การเผยแพร่
+## ส่วนที่ 3 การเผยแพร่
 โดยกดไปที่ปุ่มคำว่า **การเผยแพร่** ในหน้าปรับปรุงแบบฟอร์ม หลังจากที่เราสร้างแบบฟอร์มเสร็จแล้ว แล้วต้องการที่จะเผยแพร่แบบฟอร์มของเรา
 
 <div style={{ textAlign: 'center', marginBottom: '10px' }}>
@@ -632,10 +776,76 @@ import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, Ch
 
 <br />
 
-### กรณีเลือกเผยแพร่แบบสาธารณะ
+---
+
+### 3.1 กรณีเลือกเผยแพร่แบบภายใน กฟภ.
  
 <div style={{ textAlign: 'center', marginBottom: '10px' }}>
   <img src="/img/create-form/create-form56.png" alt="คำอธิบายรูป" width="700" />
+</div>
+
+
+<br />
+
+- ผู้ทำแบบสำรวจสามารถกดปุ่มสีม่วง คำว่า **เพิ่มผู้ทำแบบสำรวจ เพื่อเจาะจงบุคคลของพนักงานในกฟภ.** ในการให้ทำแบบฟอร์มของเราได้
+  - **รายละเอียดของการเพิ่มผู้ทำแบบสำรวจ**
+
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/create-form/create-form59.png" alt="คำอธิบายรูป" width="600" />
+</div>
+
+เมื่อผู้ใช้กดปุ่ม**เพิ่มผู้ทำแบบสำรวจ**แล้ว จะมีแถบทางด้านขวาของจอขึ้นเป็นหน้าสำหรับเลือกคนที่ต้องการจะเพิ่มผู้ทำแบบสำรวจของพนักงานในกฟภ.
+
+<br />
+
+<div style={{ display: 'flex', gap: '10px', justifyContent: 'center', height: '400px' }}>
+  <img src="/img/create-form/create-form60.png" alt="รูปที่ 1" style={{ width: '300px',objectFit: 'contain' }} />
+  <img src="/img/create-form/create-form60-1.png" alt="รูปที่ 2" style={{ width: '550px', objectFit: 'contain' }} />
+</div>
+ถ้าต้องการจะค้นหาผู้ทำแบบสำรวจที่เราต้องการ สามารถค้นหาได้ที่ตรงช่องค้นหาพนักงาน โดยการพิมพ์ รหัสพนักงานหรือชื่อ-นามสกุลลงไป และสามารถพิมพ์ตำแหน่ง และสังกัดของพนักงาน ได้ที่ช่องค้นหาด้านล่างต่อจากช่องค้นหาพนักงานได้
+
+<div style={{ display: 'flex', gap: '10px', justifyContent: 'center', height: '400px' }}>
+  <img src="/img/create-form/create-form61.png" alt="รูปที่ 1" style={{ width: '200px',objectFit: 'contain' }} />
+  <img src="/img/create-form/create-form61-1.png" alt="รูปที่ 2" style={{ width: '550px', objectFit: 'contain' }} />
+</div>
+ต่อมาส่วนนี้คือผลการค้นหาที่แสดงขึ้นมา จากการพิมพ์ค้นหาพนักงาน ตำแหน่งและสังกัดนั้นๆ สามารถกดเลือกพนักงานที่ต้องการจะเพิ่มผู้ทำแบบสำรวจได้ที่ช่องสี่เหลี่ยมด้านหน้าทางซ้ายของรูปรายการพนักงานได้ หรือจะกดเลือกทั้งหมดจากช่องด้านบนมุมขวา และส่วนด้านล่างสุดจะเป็นการแสดงรายชื่อพนักงานในหน้าต่างๆสามารถกดไปหน้าอื่นๆเพื่อดูรายชื่อพนักงานคนอื่นได้
+
+<div style={{ display: 'flex', gap: '10px', justifyContent: 'center', height: '400px' }}>
+  <img src="/img/create-form/create-form62.png" alt="รูปที่ 1" style={{ width: '350px',objectFit: 'contain' }} />
+  <img src="/img/create-form/create-form62-1.png" alt="รูปที่ 2" style={{ width: '550px', objectFit: 'contain' }} />
+</div>
+
+ส่วนสุดท้ายหลังจากที่กดเลือกผู้ใช้ที่ต้องการจะเพิ่มผู้ทำแบบสำรวจเรียบร้อยแล้ว สามารถกดบันทึกได้โดยการกดที่ปุ่มสีม่วง **"เพิ่ม ... คน"** ทางด้านขวา หรือถ้าไม่ต้องการบันทึกให้กดที่ปุ่ม **"ยกเลิก"** ทางด้านซ้ายได้
+
+<br />
+
+- **ตัวอย่างหน้าผลลัพธ์หลังจากเพิ่มผู้ทำแบบสำรวจเรียบร้อยแล้ว**
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/create-form/create-form70.png" alt="คำอธิบายรูป" width="700" />
+</div>
+จากในภาพหากเราเพิ่มผู้ทำแบบสำรวจแล้ว จะขึ้นแสดงรายละเอียดข้อมูลของพนักงานของกฟภ.ที่เราทำการเพิ่มด้วย 
+
+<br />
+
+- **กรณีที่เราต้องการลบผู้ทำแบบสำรวจที่เราเพิ่มมาออก** 
+1. สามารถกดได้ที่ปุ่ม <Trash2 size={20} style={{ verticalAlign: 'middle', marginRight: '8px' }} />  ที่มุมขวาสุดของจอเพื่อทำการลบผู้ทำแบบสำรวจเป็นรายบุคคลออก 
+2. กรณีมีผู้ทำแบบสำรวจหลายคนแล้วต้องการที่จะลบผู้ทำแบบสำรวจออกทั้งหมดสามารถกดที่ปุ่ม <Trash2 size={20} style={{ verticalAlign: 'middle', marginRight: '8px' }} /> คำว่า **ลบทั้งหมด** ข้างปุ่มเพิ่มผู้ทำแบบสำรวจด้านบน เพื่อลบผู้ทำแบบสำรวจออกทั้งหมด
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/create-form/create-form71.png" alt="คำอธิบายรูป" width="700" />
+</div>
+
+<br />
+
+- **การตั้งค่าแบบฟอร์มภายใน** สามารถเลือกได้ว่าจะอนุญาตให้ผู้ใช้สามารถกลับมาแก้ไขคำตอบได้ไหม
+- **ข้อความปฎิเสธความรับผิดชอบ(Disclaimer)** ส่วนนี้ผู้ใช้สามารถกดอ่านเพิ่มเติมได้ โดยการกดที่ปุ่มลูกสรชี้ลงด้านล่าง
+
+
+---
+
+### 3.2 กรณีเลือกเผยแพร่แบบสาธารณะ
+ 
+<div style={{ textAlign: 'center', marginBottom: '10px' }}>
+  <img src="/img/create-form/create-form57.png" alt="คำอธิบายรูป" width="700" />
 </div>
 
 - **การตั้งค่าแบบฟอร์มสาธารณะ** สามารถกำหนดได้ว่าต้องการกำจัดจำนวนผู้ทำแบบสำรวจ , ต้องการให้ผู้ใช้เข้าสู่ระบบก่อนตอบไหม
@@ -643,32 +853,6 @@ import { Users , FileText, Upload, ZoomIn, Maximize, ZoomOut, ChevronsDownUp, Ch
 
 <br />
 
-### กรณีเลือกเผยแพร่แบบภายใน กฟภ.
- 
-<div style={{ textAlign: 'center', marginBottom: '10px' }}>
-  <img src="/img/create-form/create-form57.png" alt="คำอธิบายรูป" width="700" />
-</div>
-
-- ผู้ทำแบบสำรวจสามารถกดปุ่มสีม่วง คำว่า **เพิ่มผู้ทำแบบสำรวจ เพื่อเจาะจงบุคคลของพนักงานในกฟภ.** ในการให้ทำแบบฟอร์มของเราได้
-- **การตั้งค่าแบบฟอร์มภายใน** สามารถเลือกได้ว่าจะอนุญาตให้ผู้ใช้สามารถกลับมาแก้ไขคำตอบได้ไหม
-- **ข้อความปฎิเสธความรับผิดชอบ(Disclaimer)** ส่วนนี้ผู้ใช้สามารถกดอ่านเพิ่มเติมได้ โดยการกดที่ปุ่มลูกสรชี้ลงด้านล่าง
-
-เมื่อตรวจสอบความถูกต้องอะไรเรียบร้อยแล้ว สามารถกดที่ปุ่มสีม่วง คำว่า **เปลี่ยนแปลงและเผยแพร่** เพื่อทำการเผยแพร่แบบฟอร์มได้เลย หรือกดเปลี่ยนเป็นฉบับร่างไว้ก่อนได้หากยังไม่พร้อมทำการเผยแพร่ในตอนนี้
-
----
-
-## ดูข้อมูลเพิ่มเติมเกี่ยวกับแบบฟอร์ม
-ในส่วนของหน้าเพิ่มเติมที่อยู่ทางขวาสุดของเว็บ ของปรับปรุงแบบฟอร์มผู้ใช้สามารถดูข้อมูลเพิ่มเติมของแบบฟอร์มในหน้านี้ โดยจะขึ้นมาเมื่อผู้ใช้ทำการเผยแพร่หรือบันทึกฉบับร่างของแบบฟอร์มแล้ว
-
-<div style={{ textAlign: 'center', marginBottom: '10px' }}>
-  <img src="/img/create-form/create-form58.png" alt="คำอธิบายรูป" width="700" />
-</div>
-
-**รายละเอียดส่วนเพิ่มเติมแบบฟอร์ม** 
-- **ดูผลลัพธ์** สามารถดูผลการตอบแบบฟอร์มทั้งหมดได้ในนี้ เช่น จำนวนคำตอบทั้งหมดที่ผู้ใช้ตอบแบบฟอร์มของเรา
-- **แดชบอร์ด** ส่วนนี้จะเป็นการแสดงสถิติและการวิเคราะห์ข้อมูล โดยจะแสดงผลเป็นในรูปแบบกราฟและสถิติในนี้
-- **ลิงก์/QR Code** ส่วนนี้กรณีที่ผู้ใช้เผยแพร่แบบฟอร์มเรียบร้อยแล้วผู้ใช้สามารถแชร์แบบฟอร์มด้วยลิ้งก์หรือ QR Code ได้
-- **ลบแบบฟอร์ม** เมื่อผู้ใช้ต้องการที่จะลบแบบฟอร์มสามารถลบได้ในส่วนนี้ โดยแบบฟอร์มที่ถูกลบจะลบอย่างถาวร ไม่สามารถกู้คืนได้อีก
-- **ข้อมูลแบบฟอร์ม** ตรงส่วนนี้จะแสดงข้อมูลอย่าง สถานะของแบบฟอร์ม , จำนวนคำตอบ , จำนวนผู้จัดการ 
+เมื่อตรวจสอบความถูกต้องอะไรเรียบร้อยแล้ว สามารถกดที่ปุ่มสีม่วง คำว่า **บันทึกและเผยแพร่** หรือ **เปลี่ยนแปลงและเผยแพร่** เพื่อทำการเผยแพร่แบบฟอร์ม หรือกดเปลี่ยนเป็นฉบับร่างไว้ก่อนได้หากยังไม่พร้อมทำการเผยแพร่ในตอนนี้
 
 ---

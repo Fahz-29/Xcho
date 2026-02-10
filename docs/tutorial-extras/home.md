@@ -66,7 +66,7 @@ sidebar_position: 1
 เมื่อมีรายการงานที่ต้องดำเนินการ ระบบจะแสดงรายการงานทั้งหมด พร้อมรายละเอียดของงานแต่ละรายการ ดังนี้
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/home/todowork.png" alt="กรณีมีงานที่ต้องทำ" width="700" />
+  <img src="/img/home/todowork.png" alt="กรณีมีงานที่ต้องทำ" width="400" />
 </div>
 
 **รายละเอียดที่แสดง**
@@ -83,7 +83,7 @@ sidebar_position: 1
 ถัดมาเป็นปุ่ม **“ดูทั้งหมด”** ซึ่งใช้สำหรับเข้าสู่หน้ารวมรายการงานทั้งหมด
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/home/viewtotal.png" alt="ปุ่มดูทั้งหมด" width="700" />
+  <img src="/img/home/viewtotal.png" alt="ปุ่มดูทั้งหมด" width="400" />
 </div>
 
 <br />
@@ -101,7 +101,7 @@ sidebar_position: 1
 ส่วนนี้จะแสดงปฏิทินที่ระบุวันที่ปัจจุบัน และวันที่ของงานที่มีกำหนดส่งภายในเดือนนั้น ๆ
 
 <div style={{ textAlign: 'center' }}>
-  <img src="/img/home/sent.png" alt="ปฏิทินและกำหนดส่ง" width="500" />
+  <img src="/img/home/sent.png" alt="ปฏิทินและกำหนดส่ง" width="400" />
 </div>
 
 - ถัดมาในหัวข้อ **“กำหนดส่งที่ใกล้เข้ามา”**  

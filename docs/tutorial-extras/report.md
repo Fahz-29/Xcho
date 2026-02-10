@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 ---
 
 # แจ้งปัญหา
@@ -121,6 +121,7 @@ sidebar_position: 1
 <div style={{ textAlign: 'center' }}>
   <img src="/img/report/bug3.png" alt="หน้ากล่องขาเข้า" width="700" />
 </div>
+
 - แนบไฟล์รูปภาพประกอบความผิดปกติที่พบ  
 - กดปุ่ม **Remove** เมื่อต้องการลบคำอธิบาย  
 - กดปุ่ม **Add new** เพื่อเพิ่มคำอธิบายความผิดปกติหรือ Bug อื่น ๆ เพิ่มเติมได้

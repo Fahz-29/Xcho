@@ -8,13 +8,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+--ifm-color-primary: #7d35f8; 
+  --ifm-color-primary-dark: #6d28d9;
+  --ifm-color-primary-darker: #5b21b6;
+  --ifm-color-primary-darkest: #4c1d95;
+  --ifm-color-primary-light: #8b5cf6;
+  --ifm-color-primary-lighter: #a78bfa;
+  --ifm-color-primary-lightest: #ddd6fe;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
    --ifm-font-family-base: 'Kanit', sans-serif;
@@ -22,12 +22,55 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+--ifm-color-primary: #ac81f8; 
+  --ifm-color-primary-dark: #6d28d9;
+  --ifm-color-primary-darker: #5b21b6;
+  --ifm-color-primary-darkest: #4c1d95;
+  --ifm-color-primary-light: #8b5cf6;
+  --ifm-color-primary-lighter: #a78bfa;
+  --ifm-color-primary-lightest: #ddd6fe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* --- ปุ่ม Primary --- */
+.custom-btn-primary {
+  background-color: #7c3aed !important;
+  border: none !important;
+  color: white !important;
+  transition: all 0.2s ease; 
+}
+
+/* เมื่อเมาส์ชี้ (Hover) */
+.custom-btn-primary:hover {
+  background-color: #6d28d9 !important; 
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+/* เมื่อกดค้าง (Active) */
+.custom-btn-primary:active {
+  background-color: #5b21b6 !important; 
+  transform: translateY(0); 
+}
+
+/* --- ปุ่ม Secondary --- */
+.custom-btn-secondary {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: rgb(49, 49, 49) !important;
+  transition: all 0.2s ease;
+}
+
+/* เมื่อเมาส์ชี้ (Hover) */
+.custom-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.7) !important; /* ขาวชัดขึ้น */
+  border-color: rgba(255, 255, 255, 0.8) !important;
+  text-decoration: none; 
+}
+
+/* เมื่อกดค้าง (Active) */
+.custom-btn-secondary:active {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  transform: scale(0.98); 
 }
