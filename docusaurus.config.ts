@@ -66,8 +66,14 @@ const config: Config = {
           position: 'left',
           label: 'วิธีการใช้งาน',
         },
+        {
+          to: '/creator', // ลิ้งก์ไปยังหน้าใหม่ที่สร้างใน src/pages หรือ docs
+          label: 'ผู้จัดทำ', // ชื่อที่จะปรากฏบน Header
+          position: 'left',   // อยู่ฝั่งซ้ายข้างๆ "วิธีการใช้งาน"
+        },
       ],
     },
+
     footer: {
       style: 'dark',
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
